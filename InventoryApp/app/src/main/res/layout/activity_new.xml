@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text1"
+        style="@style/main_text_view"
+        android:text="@string/product_heading" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout1"
+        style="@style/relativelayout1"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/product"
+            style="@style/heading_text_view"
+            android:text="@string/product"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/editproduct"
+            style="@style/value_text_view"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:hint="@string/product" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout2"
+        style="@style/relativelayout1"
+        android:layout_below="@+id/relative_layout1"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/price_name"
+            style="@style/heading_text_view"
+            android:text="@string/price"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/editprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@+id/currency"
+            android:layout_toStartOf="@+id/currency"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/price"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/currency"
+            style="@style/value_text_view"
+            android:hint="@string/currency" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout3"
+        style="@style/relativelayout1"
+        android:layout_below="@+id/relative_layout2"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            style="@style/heading_text_view"
+            android:layout_marginTop="10dp"
+            android:text="@string/quantity"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/editquantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/increase_button1"
+            android:layout_toStartOf="@+id/increase_button1"
+            android:hint="@string/quantity"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/increase_button1"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@+id/decrease_button1"
+            android:layout_toStartOf="@+id/decrease_button1"
+            android:background="#5656"
+            android:text="@string/increase"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/decrease_button1"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#9898"
+            android:text="@string/decrease"
+            android:textColor="#000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout4"
+        style="@style/relativelayout1"
+        android:layout_below="@+id/relative_layout3"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/supplier_name"
+            style="@style/heading_text_view"
+            android:text="@string/supplier"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/supplier_edit"
+            style="@style/value_text_view"
+            android:hint="@string/supplier" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout5"
+        style="@style/relativelayout1"
+        android:layout_below="@+id/relative_layout4"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/phone_heading"
+            style="@style/heading_text_view"
+            android:text="@string/phone"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/editphone"
+            style="@style/value_text_view"
+            android:layout_toStartOf="@id/call_button1"
+            android:layout_toLeftOf="@+id/call_button1"
+            android:hint="@string/product" />
+
+        <Button
+            android:id="@+id/call_button1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/call"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/delete"
+        android:id="@+id/delete"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_layout5"/>
+
+
+
+</RelativeLayout>

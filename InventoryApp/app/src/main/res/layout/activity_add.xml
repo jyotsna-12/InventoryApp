@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/relative1"
+        style="@style/relativelayout1">
+        <TextView
+            android:id="@+id/text1"
+            style="@style/heading_text_view"
+            android:layout_alignBaseline="@+id/product"
+            android:text="@string/product"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/product"
+            style="@style/value_text_view"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:inputType="text"
+            android:hint="@string/product" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relative2"
+        style="@style/relativelayout1"
+        android:layout_below="@+id/relative1">
+
+        <TextView
+            android:id="@+id/price"
+            style="@style/heading_text_view"
+            android:layout_alignBaseline="@+id/edit_price"
+            android:text="@string/price"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/edit_price"
+            style="@style/value_text_view"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:hint="@string/price" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relative3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative2">
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edit_quantity"
+            android:text="@string/quantity"
+            android:textSize="20sp" />
+        <EditText
+            android:inputType="number"
+            android:id="@+id/edit_quantity"
+             style="@style/value_text_view"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:hint="@string/quantity" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative4"
+        style="@style/relativelayout1"
+        android:layout_below="@+id/relative3">
+        <TextView
+            android:id="@+id/supplier"
+            style="@style/heading_text_view"
+            android:layout_alignBaseline="@+id/edit_supplier"
+            android:text="@string/supplier"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_supplier"
+            style="@style/value_text_view"
+            android:layout_marginEnd="12dp"
+            android:inputType="text"
+            android:layout_marginRight="12dp"
+            android:hint="@string/supplier" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relative5"
+       style="@style/relativelayout1"
+        android:layout_below="@+id/relative4">
+        <TextView
+            android:id="@+id/phone"
+            style="@style/heading_text_view"
+            android:layout_alignBaseline="@+id/phone_number"
+            android:text="@string/phone"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/phone_number"
+            style="@style/value_text_view"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:inputType="phone"
+            android:hint="@string/phone" />
+    </RelativeLayout>
+</RelativeLayout>
